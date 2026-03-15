@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDU // ZHANG YUHENG</title>
+    <meta name="description" content="Zhang Yuheng - Data & Algorithm Engineer | Interactive CDU-Style Portfolio">
+    <meta name="theme-color" content="#080c10">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23080c10' width='100' height='100' rx='12'/><text x='50' y='70' text-anchor='middle' fill='%2300ff41' font-size='60' font-family='monospace' font-weight='bold'>C</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Boot Sequence Overlay -->
+    <div id="boot-screen">
+        <div id="boot-log"></div>
+        <div id="boot-skip">PRESS ANY KEY TO SKIP</div>
+    </div>
+
+    <!-- Main CDU Interface -->
+    <div id="cdu" class="hidden">
+        <!-- Status Bar -->
+        <header id="status-bar">
+            <div class="status-left">
+                <span class="indicator"></span>
+                <span id="page-label">SYS.IDENT</span>
+            </div>
+            <div class="status-right">
+                <span id="clock"></span>
+                <button id="lang-btn" type="button" aria-label="Toggle Language">EN</button>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="nav-bar">
+            <button class="nav-tab active" data-page="ident"><span class="key-hint">1</span>IDENT</button>
+            <button class="nav-tab" data-page="perf"><span class="key-hint">2</span>PERF</button>
+            <button class="nav-tab" data-page="prog"><span class="key-hint">3</span>PROG</button>
+            <button class="nav-tab" data-page="data"><span class="key-hint">4</span>DATA</button>
+            <button class="nav-tab" data-page="rsrch"><span class="key-hint">5</span>RSRCH</button>
+            <button class="nav-tab" data-page="link"><span class="key-hint">6</span>LINK</button>
+        </nav>
+
+        <!-- Content -->
+        <main id="content" tabindex="0"></main>
+
+        <!-- Command Area -->
+        <footer id="cmd-area">
+            <div id="cmd-output"></div>
+            <div id="cmd-line">
+                <span class="prompt">❯</span>
+                <input type="text" id="cmd-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div id="hints">
+                <span class="hint"><kbd>1-6</kbd> PAGE</span>
+                <span class="hint"><kbd>↑↓</kbd> SCROLL</span>
+                <span class="hint"><kbd>/</kbd> CMD</span>
+                <span class="hint"><kbd>Tab</kbd> NAV</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CRT Scanline Overlay -->
+    <div id="scanlines"></div>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/content.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
