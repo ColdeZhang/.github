@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:071018,35:0f2744,70:0f5132,100:ff8c00&text=ZHANG%20YUHENG&fontAlignY=38&desc=Data%20%26%20Algorithm%20Engineer%20%7C%20Machine%20Learning%20%7C%20Systems%20Engineering&descAlignY=58&fontColor=f4fbff&animation=fadeIn" alt="header" />
+<img src="./profile/header.svg" alt="header" />
 
 # SYSTEM PROFILE // ONLINE
 
@@ -153,7 +153,7 @@ interests:
 
 ## CONTRIBUTION GRID
 
-<img src="https://raw.githubusercontent.com/ColdeZhang/ColdeZhang/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/ColdeZhang/.github/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 
 </div>
 

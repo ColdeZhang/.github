@@ -1,6 +1,13 @@
 name: Generate Snake
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - profile/README.md
+      - .github/workflows/generate-snake.yml
   schedule:
     - cron: '0 18 * * *'
   workflow_dispatch:
