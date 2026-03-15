@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./header.svg" alt="header" />
+<img src="https://raw.githubusercontent.com/ColdeZhang/.github/refs/heads/main/profile/header.svg" alt="header" />
 
 # SYSTEM PROFILE // ONLINE
 
